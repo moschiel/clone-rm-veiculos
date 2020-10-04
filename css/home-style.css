@@ -5,7 +5,9 @@
   font-family: "Oswald", sans-serif;
   font-style: italic;
 }
-
+html, body{
+  min-width: 280px;
+}
 .center {
   max-width: 1200px;
   margin: 0px auto;
@@ -36,12 +38,16 @@ nav {
   justify-content: space-between;
   padding: 30px 10px;
 	align-items: center;
-	height: 100px;
+	height: 130px;
 }
 
 header nav img.btn-menu{
 	display: none;
 	cursor: pointer;
+}
+
+header nav img.logo{
+  height: 70px;
 }
 
 nav div.right ul {
@@ -80,20 +86,22 @@ nav div.right ul a:visited {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+	background-size: contain;
 }
 
 .banner-container {
-  /* border: 2px solid yellow; */
+	/* border: 2px solid yellow; */
   width: 100%;
   height: 100%;
 }
 
+
+/***** BARRAS ****/
 .barras {
-  margin-left: 30px;
+	margin-left: 30px;
+	padding-top: 80px;
 }
 
-/***** BAR ****/
 .bar {
   /* border: 1px solid blue; */
   width: fit-content;
@@ -201,29 +209,76 @@ section.destaque .group-car .car p {
   color: #353535;
 }
 
-/* SERVICOS E DEPOIMENTOS */
+/* *****SERVICOS E DEPOIMENTOS ******/
 .serv-depo {
   color: white;
   display: flex;
   justify-content: center;
+  /* height: 380px; */
 }
-.servicos {
-  background-color: black;
+.servicos,
+.depoimentos{
+  padding-top: 90px;
+  padding-bottom: 50px;
   width: 50%;
 }
+.servicos {
+  background-color: #242424;
+}
 .serv-container {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 425px;
   margin: 0 auto;
 }
-.serv-container button {
+.serv-container a {
   float: right;
   position: relative;
-  top: -60px;
+  top: -75px;
+}
+.serv-container h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+.serv-container li {
+  font-style: normal;
 }
 .depoimentos {
   background-color: #eb2d2d;
-  width: 50%;
+}
+.depo-container {
+  /* border: 1px solid white; */
+  width: 74%;
+  margin: 0 auto;
+}
+.depo-container h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.depo1 {
+  display: flex;
+  flex-direction: column;
+}
+.depo1 p{
+  font-style: normal;
+  font-size: 22px;
+}
+.depo1 .autor{
+  color: #242424;
+  align-self: flex-end;
+  margin-top: 25px;
+}
+.setas {
+  position: relative;
+  top: -30px;
+}
+.setas img {
+  padding: 0 15px;
+  cursor: pointer;
 }
 
 /***** CONTATO ****/
@@ -331,6 +386,20 @@ footer nav.center h2{
 	color: white;
 }
 
+/***** MEDIA SCREEN <= 950px ******/
+@media screen and (max-width: 950px) {
+  /* MEDIA SCREEN -> SERVICOS */
+  .serv-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .serv-container a{
+    float: none;
+    position: static;
+    align-self: center;
+  }
+}
 
 /***** MEDIA SCREEN <= 850px ******/
 @media screen and (max-width: 850px) {
@@ -344,11 +413,20 @@ footer nav.center h2{
 
 /***** MEDIA SCREEN <= 760px ******/
 @media screen and (max-width: 760px) {
-	
+  /* MEDIA SCREEN -> SERVICOS/DEPOIMENTOS*/
+  .serv-depo {
+    flex-direction: column;
+    /* height: 380px; */
+  }
+  .servicos,
+  .depoimentos {
+    width: 100%;
+  }
+
 	/* MEDIA SCREEN -> CONTATO*/
 	/* section.contato form{
 		width: 100%;
-	} */
+  } */
 	
 	section.contato form input[type="tel"],
 	section.contato form input[type="email"] {
@@ -381,31 +459,32 @@ footer nav.center{
 /***** MEDIA SCREEN <= 600px ******/
 @media screen and (max-width: 600px) {
 
-	/* MEDIA SCREEN -> HEADER */
+  /* MEDIA SCREEN -> HEADER */
 	header nav img.logo{
-		height: 60px;
+		height: 70px;
 	}
 
 	header nav img.btn-menu{
 		display: flex;
 		position: absolute;
-		top: 30px;
+		top: 45px;
 		right: 20px;
-		width: 40px;
-		height: 40px;
+		width: 35px;
+		height: 35px;
 	}
 
 
-	header nav div.right ul {
-		display: flex;
+  header nav div.right ul {
+		display: flex; 
 		background-color: white;
 		position: absolute;
 		right: 0px;
 		flex-direction: column;
 		width: 100%;
 		z-index: 3;
-		margin-top: 42px;
-		padding: 10px 0;
+		margin-top: 65px;
+    padding: 10px 0;
+    background-color: orange;
 	}
 	
 	header nav div.right ul li{
@@ -415,7 +494,12 @@ footer nav.center{
 	
 	header nav div.right ul li a{
 		font-size: 20px;
-	}
+  }
+  
+  /* MEDIA SCREEN -> SETAS */
+  .setas {
+    position: static;
+  }
 
 	/* MEDIA SCREEN -> CONTATO*/
 	section.contato form{
@@ -438,6 +522,54 @@ footer nav.center{
 		text-align: center;
 	}
 
+}
+
+/***** MEDIA SCREEN <= 400px ******/
+@media screen and (max-width: 400px) {
+/***** BAR ****/
+  .barras {
+    margin-left: 0px;
+    /* padding-top: 80px; */
+  }
+  /* .bar {
+    width: fit-content;
+    display: flex;
+    margin-bottom: 20px;
+    color: white;
+  } */
+
+  .bar:nth-of-type(1) {
+    padding-left: calc(5px * 3);
+  }
+  .bar:nth-of-type(2) {
+    padding-left: calc(5px * 2);
+  }
+  .bar:nth-of-type(3) {
+    padding-left: calc(5px * 1);
+  }
+  .bar:nth-of-type(4) {
+    padding-left: calc(5px * 0);
+    color: black;
+  }
+  .bar:nth-of-type(1) .bar-bg {
+    width: calc(100px + (30px * 3));
+  }
+  .bar:nth-of-type(2) .bar-bg {
+    width: calc(100px + (30px * 2));
+  }
+  .bar:nth-of-type(3) .bar-bg {
+    width: calc(100px + (30px * 1));
+  }
+  .bar:nth-of-type(4) .bar-bg {
+    width: calc(100px + (30px * 3));
+  }
+
+  .bar-bg > div {
+    margin-top: 3px;
+    /* para os textos */
+    padding-left: 10px;
+    font-size: 20px;
+  }
 }
 
 
