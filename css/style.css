@@ -1,277 +1,443 @@
-*{
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
-	font-family: "Oswald", sans-serif;
-	font-style: italic;
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
 }
 
-.center{
-	max-width: 1200px;
-	margin: 0px auto;
+.center {
+  max-width: 1200px;
+  margin: 0px auto;
 	width: 100%;
-	border: 1px solid;
+	padding: 0 10px;
+  /* border: 1px solid; */
 }
 
-.btn{
-	padding: 10px 25px;
-	background-color: #EB2D2D;
-	color: white;
-	font-size: 16px;
-	border-bottom: 5px solid #B21E1E;
-	margin-top: 10px;
-	width: 150px;
+.btn {
+  padding: 10px 25px;
+  background-color: #eb2d2d;
+  color: white;
+  font-size: 20px;
+  border-bottom: 5px solid #b21e1e;
+  margin-top: 20px;
+  width: 150px;
 	text-align: center;
+	cursor: pointer;
 }
 
-
-header{
-	display:flex;
-}
-
-nav{
-	width: 100%;
+header {
 	display: flex;
-	justify-content: space-between;
-	padding: 30px 10px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
 	align-items: center;
+	height: 100px;
 }
 
-nav div.right ul{
-	display: flex;
+header nav img.btn-menu{
+	display: none;
+	cursor: pointer;
 }
 
-nav div.right ul li{
-	padding: 0 20px;
-	list-style: none;
+nav div.right ul {
+  display: flex;
 }
 
-nav div.right ul li a{
-	text-decoration: none;
-	text-transform: capitalize;
-	font-size: 24px;
-	color: black;
+nav div.right ul li {
+  padding: 0 20px;
+  list-style: none;
 }
 
-nav div.right ul li a:link{
-	color: black;
-
+nav div.right ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: black;
 }
 
-
-nav div.right ul a:visited{
-	color: red;
+nav div.right ul li a:link {
+  color: black;
 }
 
+nav div.right ul a:visited {
+  color: red;
+}
 
 /***** BANNER *****/
-.banner{
-	width: 100%;
-	height: 500px;
+.banner {
+  width: 100%;
+  height: 500px;
 	background-color: black;
 }
 
 .bg {
 	height: 100%;
-	background-image: url("../images/bg.jpg");
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: contain;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 
 .banner-container {
-	/* border: 2px solid yellow; */
-	width: 100%;
-	height: 100%;
-	
+  /* border: 2px solid yellow; */
+  width: 100%;
+  height: 100%;
 }
 
 .barras {
-	margin-top: 80px;
-	margin-left: 30px;
+  margin-left: 30px;
 }
+
 /***** BAR ****/
 .bar {
-	/* border: 1px solid blue; */
-	width: fit-content; 
-	display: flex;
-	margin-bottom: 20px;
-	color: white;
+  /* border: 1px solid blue; */
+  width: fit-content;
+  display: flex;
+  margin-bottom: 20px;
+  color: white;
 }
-.bar:nth-of-type(1){
-	padding-left: calc(10px * 3);
+.bar:nth-of-type(1) {
+  padding-left: calc(10px * 3);
 }
-.bar:nth-of-type(2){
-	padding-left: calc(10px * 2);
+.bar:nth-of-type(2) {
+  padding-left: calc(10px * 2);
 }
-.bar:nth-of-type(3){
-	padding-left: calc(10px * 1);
+.bar:nth-of-type(3) {
+  padding-left: calc(10px * 1);
 }
-.bar:nth-of-type(4){
-	padding-left: calc(10px * 0);
-	color: black;
+.bar:nth-of-type(4) {
+  padding-left: calc(10px * 0);
+  color: black;
 }
 .bar:nth-of-type(1) .bar-bg {
-	width: calc(150px + (30px * 3));
+  width: calc(150px + (30px * 3));
 }
 .bar:nth-of-type(2) .bar-bg {
-	width: calc(150px + (30px * 2));
+  width: calc(150px + (30px * 2));
 }
 .bar:nth-of-type(3) .bar-bg {
-	width: calc(150px + (30px * 1));
+  width: calc(150px + (30px * 1));
 }
 .bar:nth-of-type(4) .bar-bg {
-	width: calc(150px + (30px * 3));
+  width: calc(150px + (30px * 3));
 }
 
-.bar-bg > div{
-	width: 105%;
-	height: 52px;
-	background-color: #EB2D2D;
-	background-position: center;
-	margin-top: 3px;
-	position: relative;
-	left: -6px;
-	/* para os textos */
-	display: flex;
-	align-items: center;
-	padding-left: 20px;
-	font-size: 23px;
+.bar-bg > div {
+  width: 105%;
+  height: 52px;
+  background-color: #eb2d2d;
+  background-position: center;
+  margin-top: 3px;
+  position: relative;
+  left: -6px;
+  /* para os textos */
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 23px;
 }
+
 .white-bar > div {
-	background-color: white;
+  background-color: white;
 }
-
 
 /***** DESTAQUE ****/
-section.destaque{
-	display: flex;
-	flex-direction: column;
+section.destaque {
+  display: flex;
+  flex-direction: column;
 }
 
-section.destaque .title{
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100px;
-	margin: 30px 0;
+section.destaque .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin: 30px 0;
 }
 
-section.destaque .title .line{
-	height: 2px;
-	width: 100%;
-	background-color: black;
+section.destaque .title .line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
 }
 
-section.destaque .title h2{
-	position:absolute;
-	padding: 10px 40px;
-	background-color: white;
-	font-size: 30px;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-style:italic;
+section.destaque .title h2 {
+  position: absolute;
+  padding: 10px 40px;
+  background-color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
 }
 
-section.destaque .group-car{
-	display: flex;
-	margin-bottom: 50px;
-	justify-content: space-between;
+section.destaque .group-car {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
 }
 
-section.destaque .group-car .car{
-	flex-direction: column;
-	width: 32%;
+section.destaque .group-car .car {
+  flex-direction: column;
+  width: 32%;
 }
 
-section.destaque .group-car .car img{
-	width: 100%;
+section.destaque .group-car .car img {
+  width: 100%;
 }
 
-section.destaque .group-car .car h6{
-	font-size: 20px;
-	margin: 5px 0;
+section.destaque .group-car .car h6 {
+  font-size: 20px;
+  margin: 5px 0;
 }
 
-section.destaque .group-car .car p{
-	color: #353535;
+section.destaque .group-car .car p {
+  color: #353535;
 }
 
 /* SERVICOS E DEPOIMENTOS */
 .serv-depo {
-	color: white;
-	display: flex;
-	justify-content: center;
-
+  color: white;
+  display: flex;
+  justify-content: center;
 }
-.servicos{
-	background-color: black;
-	width: 50%;
+.servicos {
+  background-color: black;
+  width: 50%;
 }
-.serv-container{
-	border: 1px solid white;
-	width: 425px;
-	margin: 0 auto;
-	
+.serv-container {
+  border: 1px solid white;
+  width: 425px;
+  margin: 0 auto;
 }
-.serv-container button{
-	float: right;
-	position: relative;
-	top: -60px;
+.serv-container button {
+  float: right;
+  position: relative;
+  top: -60px;
 }
-.depoimentos{
-	background-color: #EB2D2D;
-	width: 50%;
+.depoimentos {
+  background-color: #eb2d2d;
+  width: 50%;
 }
-
-
-
-
-
-
-
-
-
-
 
 /***** CONTATO ****/
-section.contato{
-	margin: 30px 0;
-	display: flex;
-	text-align:center;
-	justify-content:center;
+
+section.contato {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
-section.contato .title .line{
-	height: 2px;
+
+section.contato .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin: 30px 0;
+}
+
+section.contato .title .line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+section.contato .title h2 {
+  position: absolute;
+  padding: 10px 40px;
+  background-color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+}
+
+section.contato form {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  margin: 10px 0 20px;
+	flex-wrap: wrap;
+	width: 575px;
+	min-width: 50%;
+}
+
+section.contato form input[type="tel"],
+section.contato form input[type="email"] {
+	width: 48%;
+	margin:30px 0;
+}
+
+section.contato form input[type="email"] {
+	margin-right: 23px;
+}
+
+section.contato form input[type="text"],
+section.contato form textarea {
 	width: 100%;
-	background-color: black;
 }
 
-section.contato .title h2{
-	position:absolute;
-	padding: 10px 40px;
-	background-color: white;
-	font-size: 30px;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-style:italic;
+section.contato form input,
+section.contato form textarea {
+	border: 1px solid #ccc;
+	font-size: 18px;
+	padding: 15px 10px;
+	font-style: normal;
 }
 
-section.contato form{
-	border: 3px solid red;
-	display:flex;
-	flex-direction: column;
+section.contato form textarea {
+	height: 180px;
+	resize: none;
 }
 
+/***** FOOTER ******/
+footer{
+	background-color: #252525;
+}
 
+footer nav.center{
+	display: flex;
+	height: 130px;
+}
+
+footer nav.center .left ul{
+	display: flex;
+	padding: 0;
+}
+
+footer nav.center .left ul li{
+	margin-right:60px;
+	list-style-type: none;
+}
+
+footer nav.center .left ul li a{
+	text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+	color: white;
+}
+
+footer nav.center h2{
+	font-size: 20px;
+	color: white;
+}
 
 
 /***** MEDIA SCREEN <= 850px ******/
 @media screen and (max-width: 850px) {
-	/* MEDIA SCREEN -> BANNER */
-	.bg {
-		background-position: bottom;
-	} 
+  /* MEDIA SCREEN -> BANNER */
+  .bg {
+    background-position: bottom;
+  }
 }
+
+
+
+/***** MEDIA SCREEN <= 760px ******/
+@media screen and (max-width: 760px) {
+	
+	/* MEDIA SCREEN -> CONTATO*/
+	/* section.contato form{
+		width: 100%;
+	} */
+	
+	section.contato form input[type="tel"],
+	section.contato form input[type="email"] {
+		width: 100%;
+}
+
+section.contato form textarea,
+section.contato form input[type="text"],
+section.contato form input[type="email"],
+section.contato form input[type="tel"]{
+	margin: 10px 0;
+}
+
+
+/* MEDIA SCREEN -> FOOTER*/
+footer nav.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+	
+	footer nav.center .left ul{
+		display: none;
+	}
+	
+}
+
+
+
+/***** MEDIA SCREEN <= 600px ******/
+@media screen and (max-width: 600px) {
+
+	/* MEDIA SCREEN -> HEADER */
+	header nav img.logo{
+		height: 60px;
+	}
+
+	header nav img.btn-menu{
+		display: flex;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+	}
+
+
+	header nav div.right ul {
+		display: flex;
+		background-color: white;
+		position: absolute;
+		right: 0px;
+		flex-direction: column;
+		width: 100%;
+		z-index: 3;
+		margin-top: 42px;
+		padding: 10px 0;
+	}
+	
+	header nav div.right ul li{
+		text-align: center;
+		padding: 7px 0;
+	}
+	
+	header nav div.right ul li a{
+		font-size: 20px;
+	}
+
+	/* MEDIA SCREEN -> CONTATO*/
+	section.contato form{
+		width: 100%
+	}
+
+	section.destaque .title {
+		margin: 50px 0 0;
+	}
+
+	section.destaque .group-car {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	section.destaque .group-car .car{
+		width: 100%;
+		margin-top: 30px;
+		padding: 10px;
+		text-align: center;
+	}
+
+}
+
+
