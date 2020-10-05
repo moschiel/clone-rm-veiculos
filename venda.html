@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/venda-style.css">
-	<title>Document</title>
+	<title>RM VEÍCULOS ESPECIAIS</title>
 </head>
 <body>
 	<header>
@@ -14,9 +14,9 @@
       <img  class="btn-menu" src="./images/icon_menu.png" alt="botao de menu">
       <div class="right">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#venda">Venda</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="venda.html">Venda</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
@@ -32,15 +32,46 @@
     <aside>
       <div class="range">
         <p>Filtre por preço</p>
-        <input type="range" id="list">
-        <datalist id="list"></datalist>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
       </div>
     </aside>
 
+    <div class="group-car">
+      <div class="car">
+        <img src="./images/carro1.jpg" alt="foto do carro volkswagen karmann-ghia">
+        <h6>Volkwasgen karmann-ghia</h6>
+        <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+      <input class="btn" type="button" value="Mais Detalhes">
+    </div>
+    <div class="car">
+      <img src="./images/carro1.jpg" alt="foto do carro volkswagen karmann-ghia">
+      <h6>Volkwasgen karmann-ghia</h6>
+      <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+      <input class="btn" type="button" value="Mais Detalhes">
+    </div>
+    <div class="car">
+      <img src="./images/carro1.jpg" alt="foto do carro volkswagen karmann-ghia">
+      <h6>Volkwasgen karmann-ghia</h6>
+      <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+      <input class="btn" type="button" value="Mais Detalhes">
+    </div>
+  </div>
 
   </section>
 
 
-
+  <footer>
+    <nav class="center">
+      <div class="left">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Venda</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <h2>Todos os direitos reservados</h2>
+    </nav>
+  </footer>
 </body>
 </html>

@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/css/home-style.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <script type="text/javascript" src="js/script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RM VEÍCULOS ESPECIAIS</title>
+
 </head>
 <body>
+
+
+
   <header>
     <nav class="center">
       <img class="logo"src="./images/logo.jpg" alt="logo rm veiculos especiaos">
@@ -15,8 +20,8 @@
       <div class="right">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#venda">Venda</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="venda.html">Venda</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
@@ -113,14 +118,26 @@
     <div class="depoimentos">
       <div class="depo-container">
         <h2>Depoimentos</h2>
-        <div class="depo1">
+        <div class="depo">
           <p class="frase">“O Rafael foi muito atencioso, me buscou no aeroporto
           e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
           <p class="autor">Robson da Mota</p>
-        </div><!--depo1-->
+        </div><!--depo-->
+        <div class="depo">
+          <p class="frase">“Nunc ultrices mollis nunc pretium rhoncus. Fusce risus mi, consectetur quis turpis eu, fermentum molestie mauris. Nullam finibus eget mi vel maximus.”</p>
+          <p class="autor">Roger Moschiel</p>
+        </div><!--depo-->
+        <div class="depo">
+          <p class="frase">“Donec sit amet rhoncus sapien, vitae luctus dui. Nunc ut mi neque. Sed volutpat, purus sed lacinia dignissim, ex felis finibus elit, non elementum orci ex ut nunc.”</p>
+          <p class="autor">Dona Irene</p>
+        </div><!--depo-->
+        <div class="depo">
+          <p class="frase">“ Morbi magna lorem, mollis ac massa vel, dapibus auctor augue. Vestibulum rhoncus eu magna in dignissim.”</p>
+          <p class="autor">Maria Helena</p>
+        </div><!--depo-->
         <div class="setas">
-          <img src="images/arrow-left.png" alt="seta-esquerda">
-          <img src="images/arrow-right.png" alt="seta-direita">
+          <img onclick="trocar_depo('left')" src="images/arrow-left.png" alt="seta-esquerda">
+          <img onclick="trocar_depo('right')" src="images/arrow-right.png" alt="seta-direita">
         </div>
       </div><!--depo-container-->
     </div><!--depoimentos-->

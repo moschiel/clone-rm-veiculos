@@ -259,15 +259,19 @@ section.destaque .group-car .car p {
   font-size: 32px;
   margin-bottom: 20px;
 }
-.depo1 {
-  display: flex;
+
+.depo {
+  display: none;
   flex-direction: column;
 }
-.depo1 p{
+.depo:first-of-type {
+  display: flex;
+}
+.depo p{
   font-style: normal;
   font-size: 22px;
 }
-.depo1 .autor{
+.depo .autor{
   color: #242424;
   align-self: flex-end;
   margin-top: 25px;

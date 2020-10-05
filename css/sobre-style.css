@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+}
+
+.center {
+  max-width: 1200px;
+  margin: 0px auto;
+	width: 100%;
+	padding: 0 10px;
+  border: 1px solid;
+}
+
+header {
+  display: flex;
+  border-bottom: 3px solid red;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+	align-items: center;
+	height: 130px;
+}
+
+header nav img.btn-menu{
+	display: none;
+	cursor: pointer;
+}
+
+header nav img.logo{
+  height: 70px;
+}
+
+nav div.right ul {
+  display: flex;
+}
+
+nav div.right ul li {
+  padding: 0 20px;
+  list-style: none;
+}
+
+nav div.right ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: black;
+}
+
+nav div.right ul li a:link {
+  color: black;
+}
+
+nav div.right ul a:visited {
+  color: red;
+}
+
+/***** SOBRE *****/
+.sobre {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.title h2 {
+  position: absolute;
+  padding: 10px 40px;
+  background-color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+/***** BANNER ******/
+.image {
+  background-color: lightgray;
+  width: 65%;
+  height: 30vw;
+  margin: 0 auto;
+}
+
+/***** MEDIA SCREEN <= 600px ******/
+@media screen and (max-width: 600px) {
+
+  /* MEDIA SCREEN -> HEADER */
+	header nav img.logo{
+		height: 70px;
+	}
+
+	header nav img.btn-menu{
+		display: flex;
+		position: absolute;
+		top: 45px;
+		right: 20px;
+		width: 35px;
+		height: 35px;
+	}
+
+
+  header nav div.right ul {
+		display: flex; 
+		background-color: white;
+		position: absolute;
+		right: 0px;
+		flex-direction: column;
+		width: 100%;
+		z-index: 3;
+		margin-top: 65px;
+    padding: 10px 0;
+    background-color: orange;
+	}
+	
+	header nav div.right ul li{
+		text-align: center;
+		padding: 7px 0;
+	}
+	
+	header nav div.right ul li a{
+		font-size: 20px;
+  }
+
+}

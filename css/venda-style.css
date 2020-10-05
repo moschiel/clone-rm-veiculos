@@ -66,6 +66,7 @@ nav div.right ul a:visited {
 section.venda {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 section.venda .title {
@@ -93,7 +94,127 @@ section.venda .title h2 {
   font-style: italic;
 }
 
+/* <!--aside--> */
+aside {
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+}
 
+
+/* <!--group-car--> */
+section.venda .group-car {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  width: 50%;
+}
+
+section.venda .group-car .car {
+  flex-direction: column;
+  width: 32%;
+}
+
+section.venda .group-car .car img {
+  width: 100%;
+}
+
+section.venda .group-car .car h6 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+section.venda .group-car .car p {
+  color: #353535;
+}
+
+section.venda .group-car .car .btn {
+  padding: 10px 25px;
+  background-color: #eb2d2d;
+  color: white;
+  font-size: 20px;
+  border-bottom: 5px solid #b21e1e;
+  margin-top: 20px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.slider {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+  opacity: 0.7;
+  transition: .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-moz-range-thumb,
+.slider::-webkit-slider-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 1px solid black;
+  background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+}
+
+
+
+
+/***** FOOTER ******/
+footer{
+	background-color: #252525;
+}
+
+footer nav.center{
+	display: flex;
+	height: 130px;
+}
+
+footer nav.center .left ul{
+	display: flex;
+	padding: 0;
+}
+
+footer nav.center .left ul li{
+	margin-right:60px;
+	list-style-type: none;
+}
+
+footer nav.center .left ul li a{
+	text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+	color: white;
+}
+
+footer nav.center h2{
+	font-size: 20px;
+	color: white;
+}
+
+
+/***** MEDIA SCREEN <= 760px ******/
+@media screen and (max-width: 760px) {
+
+/* MEDIA SCREEN -> FOOTER*/
+footer nav.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+	
+	footer nav.center .left ul{
+		display: none;
+	}
+	
+}
 
 
 /***** MEDIA SCREEN <= 600px ******/
@@ -136,3 +257,6 @@ section.venda .title h2 {
 		font-size: 20px;
   }
 }
+
+
+
