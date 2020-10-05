@@ -9,8 +9,8 @@
 .center {
   max-width: 1200px;
   margin: 0px auto;
-	width: 100%;
-	padding: 0 10px;
+  width: 100%;
+  padding: 0 10px;
   border: 1px solid;
 }
 
@@ -24,16 +24,16 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 30px 10px;
-	align-items: center;
-	height: 130px;
+  align-items: center;
+  height: 130px;
 }
 
-header nav img.btn-menu{
-	display: none;
-	cursor: pointer;
+header nav img.btn-menu {
+  display: none;
+  cursor: pointer;
 }
 
-header nav img.logo{
+header nav img.logo {
   height: 70px;
 }
 
@@ -61,30 +61,32 @@ nav div.right ul a:visited {
   color: red;
 }
 
-
 /***** VENDA ****/
-section.venda {
+main.venda {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
 }
 
-section.venda .title {
+
+main.venda .title {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
   margin: 30px 0;
+  border: 1px solid red;
 }
 
-section.venda .title .line {
+main.venda .title .line {
   height: 2px;
   width: 100%;
   background-color: black;
 }
 
-section.venda .title h2 {
+main.venda .title h2 {
   position: absolute;
   padding: 10px 40px;
   background-color: white;
@@ -94,61 +96,33 @@ section.venda .title h2 {
   font-style: italic;
 }
 
-/* <!--aside--> */
-aside {
-  display:flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-
-/* <!--group-car--> */
-section.venda .group-car {
+/* <!--central--> */
+main.venda .central{
   display: flex;
-  margin-bottom: 50px;
-  justify-content: space-between;
-  width: 50%;
-}
-
-section.venda .group-car .car {
-  flex-direction: column;
-  width: 32%;
-}
-
-section.venda .group-car .car img {
   width: 100%;
+  border: 1px solid violet;
+  justify-content: space-between;
 }
 
-section.venda .group-car .car h6 {
-  font-size: 20px;
-  margin: 5px 0;
+aside {
+  width: 25%;
+  min-width: 25%;
+  border: 1px solid;
+  margin-right: 30px;
 }
-
-section.venda .group-car .car p {
-  color: #353535;
-}
-
-section.venda .group-car .car .btn {
-  padding: 10px 25px;
-  background-color: #eb2d2d;
-  color: white;
-  font-size: 20px;
-  border-bottom: 5px solid #b21e1e;
-  margin-top: 20px;
-  width: 150px;
-  text-align: center;
-  cursor: pointer;
-}
-
 
 .slider {
   border: 1px solid #ccc;
   border-radius: 25px;
   height: 20px;
   width: 100%;
-  background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(200, 200, 200)
+  );
   opacity: 0.7;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .slider:hover {
@@ -161,102 +135,166 @@ section.venda .group-car .car .btn {
   height: 25px;
   cursor: pointer;
   border: 1px solid black;
-  background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(200, 200, 200)
+  );
+}
+
+main .central aside .range p{
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-style: normal;
+}
+
+main .central aside .preco{
+  display: flex;
+  justify-content: space-between;
+}
+
+main .central aside .preco p{
+  font-size: 14px;
 }
 
 
 
+/* <!--group-car--> */
+section .group-car {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  border: 1px solid red;
+  flex-wrap: wrap;
+}
+
+section .group-car .car {
+  flex-direction: column;
+  width: 32%;
+}
+
+section .group-car .car:nth-child(1n + 4) {
+margin-top: 30px;
+}
+
+
+section .group-car .car img {
+  width: 100%;
+}
+
+section .group-car .car h6 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+section .group-car .car p {
+  color: #353535;
+}
+
+section .group-car .car .btn {
+  padding: 10px 25px;
+  background-color: #eb2d2d;
+  color: white;
+  font-size: 20px;
+  border-bottom: 5px solid #b21e1e;
+  margin-top: 20px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
 
 /***** FOOTER ******/
-footer{
-	background-color: #252525;
+footer {
+  background-color: #252525;
 }
 
-footer nav.center{
-	display: flex;
-	height: 130px;
+footer nav.center {
+  display: flex;
+  height: 130px;
 }
 
-footer nav.center .left ul{
-	display: flex;
-	padding: 0;
+footer nav.center .left ul {
+  display: flex;
+  padding: 0;
 }
 
-footer nav.center .left ul li{
-	margin-right:60px;
-	list-style-type: none;
+footer nav.center .left ul li {
+  margin-right: 60px;
+  list-style-type: none;
 }
 
-footer nav.center .left ul li a{
-	text-decoration: none;
+footer nav.center .left ul li a {
+  text-decoration: none;
   text-transform: capitalize;
   font-size: 20px;
-	color: white;
+  color: white;
 }
 
-footer nav.center h2{
-	font-size: 20px;
-	color: white;
+footer nav.center h2 {
+  font-size: 20px;
+  color: white;
 }
 
+
+
+
+
+/***** MEDIA SCREEN <= 930px ******/
+@media screen and (max-width: 930px) {
+
+}
 
 /***** MEDIA SCREEN <= 760px ******/
 @media screen and (max-width: 760px) {
+  /* MEDIA SCREEN -> FOOTER*/
+  footer nav.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* MEDIA SCREEN -> FOOTER*/
-footer nav.center{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	}
-	
-	footer nav.center .left ul{
-		display: none;
-	}
-	
-}
-
-
-/***** MEDIA SCREEN <= 600px ******/
-@media screen and (max-width: 600px) {
-
-  /* MEDIA SCREEN -> HEADER */
-	header nav img.logo{
-		height: 70px;
-	}
-
-	header nav img.btn-menu{
-		display: flex;
-		position: absolute;
-		top: 45px;
-		right: 20px;
-		width: 35px;
-		height: 35px;
-	}
-
-
-	header nav div.right ul {
-		display: flex;
-		background-color: white;
-		position: absolute;
-		right: 0px;
-		flex-direction: column;
-		width: 100%;
-		z-index: 3;
-		margin-top: 70px;
-    padding: 10px 0;
-    background-color: orange;
-	}
-	
-	header nav div.right ul li{
-		text-align: center;
-		padding: 7px 0;
-	}
-	
-	header nav div.right ul li a{
-		font-size: 20px;
+  footer nav.center .left ul {
+    display: none;
   }
 }
 
 
 
+/***** MEDIA SCREEN <= 600px ******/
+@media screen and (max-width: 600px) {
+  /* MEDIA SCREEN -> HEADER */
+  header nav img.logo {
+    height: 70px;
+  }
+
+  header nav img.btn-menu {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  header nav div.right ul {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    width: 100%;
+    z-index: 3;
+    margin-top: 70px;
+    padding: 10px 0;
+    background-color: orange;
+  }
+
+  header nav div.right ul li {
+    text-align: center;
+    padding: 7px 0;
+  }
+
+  header nav div.right ul li a {
+    font-size: 20px;
+  }
+}

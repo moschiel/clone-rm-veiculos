@@ -1,77 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/venda-style.css">
-	<title>RM VEÍCULOS ESPECIAIS</title>
-</head>
-<body>
-	<header>
-    <nav class="center">
-      <img class="logo"src="./images/logo.jpg" alt="logo rm veiculos especiaos">
-      <img  class="btn-menu" src="./images/icon_menu.png" alt="botao de menu">
-      <div class="right">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="venda.html">Venda</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/venda-style.css" />
+    <title>RM VEÍCULOS ESPECIAIS</title>
+  </head>
+  <body>
+    <header>
+      <nav class="center">
+        <img
+          class="logo"
+          src="./images/logo.jpg"
+          alt="logo rm veiculos especiaos"
+        />
+        <img
+          class="btn-menu"
+          src="./images/icon_menu.png"
+          alt="botao de menu"
+        />
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="venda.html">Venda</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="venda center">
+      <div class="title center">
+        <div class="line"></div>
+        <h2>Venda</h2>
       </div>
-    </nav>
-  </header>
 
-  <section class="venda center">
-    <div class="title">
-      <div class="line"></div>
-      <h2>veículos em destaque</h2>
-    </div>
+      <div class="central">
+        <aside>
+          <div class="range">
+            <p>Filtre por preço</p>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="myRange"
+            />
+            <div class="preco">
+              <p>R$ 0,00</p>
+              <p>R$ 70.000,00</p>
+            </div>
+          </div>
 
-    <aside>
-      <div class="range">
-        <p>Filtre por preço</p>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <div class="ano">
+            <p>Filtre por ano</p>
+            <form>
+              <div class="form-venda">
+                <input type="checkbox" id="item1" />
+                <label for="item1">
+                  <div class="circle"></div>
+                </label>
+                <span>Todas as décadas</span>
+              </div>
+
+              <div class="form-venda">
+                <input type="checkbox" id="item2" />
+                <label for="item2">
+                  <div class="circle"></div>
+                </label>
+                <span>1960 - 1970</span>
+              </div>
+
+              <div class="form-venda">
+                <input type="checkbox" id="item3" />
+                <label for="item3">
+                  <div class="circle"></div>
+                </label>
+                <span>1971 - 1990</span>
+              </div>
+
+              <div class="form-venda">
+                <input type="checkbox" id="item4" />
+                <label for="item4">
+                  <div class="circle"></div>
+                </label>
+                <span>1991 - 2000</span>
+              </div>
+              
+            </form>
+          </div>
+        </aside>
+
+        <section>
+          <div class="group-car">
+            <div class="car">
+              <img
+                src="./images/carro1.jpg"
+                alt="foto do carro volkswagen karmann-ghia"
+              />
+              <h6>Volkwasgen karmann-ghia</h6>
+              <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+              <input class="btn" type="button" value="Mais Detalhes" />
+            </div>
+
+            <div class="car">
+              <img
+                src="./images/carro1.jpg"
+                alt="foto do carro volkswagen karmann-ghia"
+              />
+              <h6>Volkwasgen karmann-ghia</h6>
+              <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+              <input class="btn" type="button" value="Mais Detalhes" />
+            </div>
+
+            <div class="car">
+              <img
+                src="./images/carro1.jpg"
+                alt="foto do carro volkswagen karmann-ghia"
+              />
+              <h6>Volkwasgen karmann-ghia</h6>
+              <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+              <input class="btn" type="button" value="Mais Detalhes" />
+            </div>
+
+            <div class="car">
+              <img
+                src="./images/carro1.jpg"
+                alt="foto do carro volkswagen karmann-ghia"
+              />
+              <h6>Volkwasgen karmann-ghia</h6>
+              <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+              <input class="btn" type="button" value="Mais Detalhes" />
+            </div>
+
+            <div class="car">
+              <img
+                src="./images/carro1.jpg"
+                alt="foto do carro volkswagen karmann-ghia"
+              />
+              <h6>Volkwasgen karmann-ghia</h6>
+              <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+              <input class="btn" type="button" value="Mais Detalhes" />
+            </div>
+
+            <div class="car">
+              <img
+                src="./images/carro1.jpg"
+                alt="foto do carro volkswagen karmann-ghia"
+              />
+              <h6>Volkwasgen karmann-ghia</h6>
+              <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+              <input class="btn" type="button" value="Mais Detalhes" />
+            </div>
+          </div>
+        </section>
       </div>
-    </aside>
+    </main>
 
-    <div class="group-car">
-      <div class="car">
-        <img src="./images/carro1.jpg" alt="foto do carro volkswagen karmann-ghia">
-        <h6>Volkwasgen karmann-ghia</h6>
-        <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
-      <input class="btn" type="button" value="Mais Detalhes">
-    </div>
-    <div class="car">
-      <img src="./images/carro1.jpg" alt="foto do carro volkswagen karmann-ghia">
-      <h6>Volkwasgen karmann-ghia</h6>
-      <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
-      <input class="btn" type="button" value="Mais Detalhes">
-    </div>
-    <div class="car">
-      <img src="./images/carro1.jpg" alt="foto do carro volkswagen karmann-ghia">
-      <h6>Volkwasgen karmann-ghia</h6>
-      <p>1.6 8v, Gasolina, 2P, Manual 1969</p>
-      <input class="btn" type="button" value="Mais Detalhes">
-    </div>
-  </div>
-
-  </section>
-
-
-  <footer>
-    <nav class="center">
-      <div class="left">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Venda</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </div>
-      <h2>Todos os direitos reservados</h2>
-    </nav>
-  </footer>
-</body>
+    <footer>
+      <nav class="center">
+        <div class="left">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Venda</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <h2>Todos os direitos reservados</h2>
+      </nav>
+    </footer>
+  </body>
 </html>
