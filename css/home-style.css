@@ -425,8 +425,8 @@ footer nav.center h2 {
   }
 
   /* MEDIA SCREEN -> CONTATO*/
-  section.contato form{
-		width: 100%;
+  section.contato form {
+    width: 100%;
   }
 
   section.contato form input[type="tel"],
@@ -491,11 +491,6 @@ footer nav.center h2 {
     font-size: 20px;
   }
 
-  /* MEDIA SCREEN -> SETAS */
-  .setas {
-    position: static;
-  }
-
   /* MEDIA SCREEN -> CONTATO*/
   section.contato form {
     width: 100%;
@@ -531,6 +526,11 @@ footer nav.center h2 {
     margin-bottom: 20px;
     color: white;
   } */
+
+  /* MEDIA SCREEN -> SETAS */
+  .setas img {
+    padding: 0 10px;
+  }
 
   .bar:nth-of-type(1) {
     padding-left: calc(5px * 3);

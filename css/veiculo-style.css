@@ -107,14 +107,12 @@ main.venda-veiculo .title h2 {
 
 /***** MAIN VENDA ****/
 main.venda-veiculo .veiculo{
-  border: 3px solid;
   display: flex;
   max-width: 1200px;
   justify-content: space-between;
 }
 
 main.venda-veiculo .veiculo .imagem-veiculo{
-  border: 3px solid orange;
   width: 70%;
 }
 
@@ -124,7 +122,6 @@ main.venda-veiculo .veiculo .imagem-veiculo > img{
 
 
 main.venda-veiculo .veiculo .slide-veiculo{
-  border: 3px solid red;
   display: flex;
   margin: 20px 0;
   display: flex;
@@ -139,7 +136,6 @@ main.venda-veiculo .veiculo .slide-veiculo div.btn-right {
   background-position: center;
   background-size: 100% 100%;
   width: 20px;
-  border: 1px solid;
   height: 30px;
   cursor: pointer;
 }
@@ -157,7 +153,6 @@ main.venda-veiculo .veiculo .slide-veiculo img{
 }
 
 main.venda-veiculo .veiculo .descricao-veiculo{
-  border: 3px solid pink;
   width: 100%;
   max-width: 300px;
   padding: 0 10px;
