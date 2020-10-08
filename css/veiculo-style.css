@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+}
+
+.center {
+  max-width: 1200px;
+  margin: 0px auto;
+  width: 100%;
+  padding: 0 10px;
+  /* border: 1px solid; */
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #eb2d2d;
+  color: white;
+  font-size: 20px;
+  border-bottom: 5px solid #b21e1e;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  border-bottom: 3px solid red;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+  align-items: center;
+  height: 130px;
+}
+
+header nav img.btn-menu {
+  display: none;
+  cursor: pointer;
+}
+
+header nav img.logo {
+  height: 70px;
+}
+
+nav div.right ul {
+  display: flex;
+}
+
+nav div.right ul li {
+  padding: 0 20px;
+  list-style: none;
+}
+
+nav div.right ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: black;
+}
+
+nav div.right ul li a.corrente {
+  color: red;
+}
+
+/***** VENDA/CONTATO TITLE ****/
+main section.contato,
+main.venda-veiculo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section.contato .title,
+main.venda-veiculo .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin: 30px 0;
+}
+
+main section.contato .title .line,
+main.venda-veiculo .title .line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+main section.contato .title h2,
+main.venda-veiculo .title h2 {
+  position: absolute;
+  padding: 10px 40px;
+  background-color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/***** MAIN VENDA ****/
+main.venda-veiculo .veiculo{
+  border: 3px solid;
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+main.venda-veiculo .veiculo .imagem-veiculo{
+  border: 3px solid orange;
+  width: 70%;
+}
+
+main.venda-veiculo .veiculo .imagem-veiculo > img{
+  width: 100%;
+}
+
+
+main.venda-veiculo .veiculo .slide-veiculo{
+  border: 3px solid red;
+  display: flex;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+main.venda-veiculo .veiculo .slide-veiculo div.btn-left,
+main.venda-veiculo .veiculo .slide-veiculo div.btn-right {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 20px;
+  border: 1px solid;
+  height: 30px;
+  cursor: pointer;
+}
+
+main.venda-veiculo .veiculo .slide-veiculo div.btn-left {
+  background-image: url("../images/arrow-left.png");
+}
+
+main.venda-veiculo .veiculo .slide-veiculo div.btn-right {
+  background-image: url("../images/arrow-right.png");
+}
+
+main.venda-veiculo .veiculo .slide-veiculo img{
+  padding: 10px;
+}
+
+main.venda-veiculo .veiculo .descricao-veiculo{
+  border: 3px solid pink;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 10px;
+}
+
+
+/***** CONTATO ****/
+section.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contato form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 20px;
+  flex-wrap: wrap;
+  width: 575px;
+  min-width: 50%;
+}
+
+section.contato form input[type="tel"],
+section.contato form input[type="email"] {
+  width: 48%;
+  margin: 30px 0;
+}
+
+section.contato form input[type="email"] {
+  margin-right: 23px;
+}
+
+section.contato form input[type="text"],
+section.contato form textarea {
+  width: 100%;
+}
+
+section.contato form input,
+section.contato form textarea {
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 15px 10px;
+  font-style: normal;
+}
+
+section.contato form textarea {
+  height: 180px;
+  resize: none;
+}
+
+/***** FOOTER ******/
+footer {
+  background-color: #252525;
+}
+
+footer nav.center {
+  display: flex;
+  height: 130px;
+}
+
+footer nav.center .left ul {
+  display: flex;
+  padding: 0;
+}
+
+footer nav.center .left ul li {
+  margin-right: 60px;
+  list-style-type: none;
+}
+
+footer nav.center .left ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: white;
+}
+
+footer nav.center .left ul li a.corrente {
+  color: red;
+}
+
+footer nav.center h2 {
+  font-size: 20px;
+  color: white;
+}
+
+/***** MEDIA SCREEN <= 600px ******/
+@media screen and (max-width: 600px) {
+  /* MEDIA SCREEN -> HEADER */
+  header nav img.logo {
+    height: 70px;
+  }
+
+  header nav img.btn-menu {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  header nav div.right ul {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    width: 100%;
+    z-index: 3;
+    margin-top: 70px;
+    padding: 10px 0;
+    background-color: orange;
+  }
+
+  header nav div.right ul li {
+    text-align: center;
+    padding: 7px 0;
+  }
+
+  header nav div.right ul li a {
+    font-size: 20px;
+  }
+}
+
+/***** MEDIA SCREEN <= 760px ******/
+@media screen and (max-width: 760px) {
+  .center{
+    padding: 0 20px;
+  }
+
+
+  /* MEDIA SCREEN -> CONTATO*/
+  section.contato form {
+    width: 100%;
+  }
+
+  main section.contato form input[type="tel"],
+  main section.contato form input[type="email"] {
+    width: 100%;
+  }
+
+  main section.contato form textarea,
+  main section.contato form input[type="text"],
+  main section.contato form input[type="email"],
+  main section.contato form input[type="tel"] {
+    margin: 10px 0;
+  }
+
+/***** MEDIA SCREEN -> MAIN VENDA ****/
+main.venda-veiculo .veiculo{
+  flex-wrap: wrap;
+}
+main.venda-veiculo .veiculo .imagem-veiculo{
+   width: 100%;
+}
+main.venda-veiculo .veiculo .descricao-veiculo{
+  width: 100%;
+  max-width: unset;
+  text-align: center;
+}
+
+  /* MEDIA SCREEN -> FOOTER*/
+  footer nav.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer nav.center .left ul {
+    display: none;
+  }
+}

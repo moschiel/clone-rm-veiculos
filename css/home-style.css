@@ -425,9 +425,9 @@ footer nav.center h2 {
   }
 
   /* MEDIA SCREEN -> CONTATO*/
-  /* section.contato form{
+  section.contato form{
 		width: 100%;
-  } */
+  }
 
   section.contato form input[type="tel"],
   section.contato form input[type="email"] {

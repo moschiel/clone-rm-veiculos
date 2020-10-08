@@ -195,17 +195,23 @@ section .group-car .car p {
   color: #353535;
 }
 
-section .group-car .car .btn {
+section .group-car .car button.btn {
   padding: 10px 25px;
   background-color: #eb2d2d;
   color: white;
   font-size: 20px;
   border-bottom: 5px solid #b21e1e;
   margin-top: 20px;
-  width: 150px;
   text-align: center;
   cursor: pointer;
 }
+
+section .group-car .car button.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+
 
 /***** FOOTER ******/
 footer {
@@ -243,9 +249,6 @@ footer nav.center h2 {
   color: white;
 }
 
-/***** MEDIA SCREEN <= 930px ******/
-@media screen and (max-width: 930px) {
-}
 
 /***** MEDIA SCREEN <= 760px ******/
 @media screen and (max-width: 760px) {
