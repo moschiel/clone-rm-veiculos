@@ -5,14 +5,15 @@
   font-family: "Oswald", sans-serif;
   font-style: italic;
 }
-html, body{
+html,
+body {
   min-width: 280px;
 }
 .center {
   max-width: 1200px;
   margin: 0px auto;
-	width: 100%;
-	padding: 0 10px;
+  width: 100%;
+  padding: 0 10px;
   /* border: 1px solid; */
 }
 
@@ -24,12 +25,12 @@ html, body{
   border-bottom: 5px solid #b21e1e;
   margin-top: 20px;
   width: 150px;
-	text-align: center;
-	cursor: pointer;
+  text-align: center;
+  cursor: pointer;
 }
 
 header {
-	display: flex;
+  display: flex;
 }
 
 nav {
@@ -37,16 +38,16 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 30px 10px;
-	align-items: center;
-	height: 130px;
+  align-items: center;
+  height: 130px;
 }
 
-header nav img.btn-menu{
-	display: none;
-	cursor: pointer;
+header nav img.btn-menu {
+  display: none;
+  cursor: pointer;
 }
 
-header nav img.logo{
+header nav img.logo {
   height: 70px;
 }
 
@@ -66,11 +67,7 @@ nav div.right ul li a {
   color: black;
 }
 
-nav div.right ul li a:link {
-  color: black;
-}
-
-nav div.right ul a:visited {
+nav div.right ul li a.corrente {
   color: red;
 }
 
@@ -78,28 +75,27 @@ nav div.right ul a:visited {
 .banner {
   width: 100%;
   height: 500px;
-	background-color: black;
+  background-color: black;
 }
 
 .bg {
-	height: 100%;
+  height: 100%;
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-position: right;
-	background-size: contain;
+  background-size: contain;
 }
 
 .banner-container {
-	/* border: 2px solid yellow; */
+  /* border: 2px solid yellow; */
   width: 100%;
   height: 100%;
 }
 
-
 /***** BARRAS ****/
 .barras {
-	margin-left: 30px;
-	padding-top: 80px;
+  margin-left: 30px;
+  padding-top: 80px;
 }
 
 .bar {
@@ -217,7 +213,7 @@ section.destaque .group-car .car p {
   /* height: 380px; */
 }
 .servicos,
-.depoimentos{
+.depoimentos {
   padding-top: 90px;
   padding-bottom: 50px;
   width: 50%;
@@ -267,11 +263,11 @@ section.destaque .group-car .car p {
 .depo:first-of-type {
   display: flex;
 }
-.depo p{
+.depo p {
   font-style: normal;
   font-size: 22px;
 }
-.depo .autor{
+.depo .autor {
   color: #242424;
   align-self: flex-end;
   margin-top: 25px;
@@ -288,12 +284,11 @@ section.destaque .group-car .car p {
 /***** CONTATO ****/
 
 section.contato {
-display:flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 section.contato .title {
   width: 100%;
@@ -322,83 +317,87 @@ section.contato .title h2 {
 
 section.contato form {
   display: flex;
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 10px 0 20px;
-	flex-wrap: wrap;
-	width: 575px;
-	min-width: 50%;
+  flex-wrap: wrap;
+  width: 575px;
+  min-width: 50%;
 }
 
 section.contato form input[type="tel"],
 section.contato form input[type="email"] {
-	width: 48%;
-	margin:30px 0;
+  width: 48%;
+  margin: 30px 0;
 }
 
 section.contato form input[type="email"] {
-	margin-right: 23px;
+  margin-right: 23px;
 }
 
 section.contato form input[type="text"],
 section.contato form textarea {
-	width: 100%;
+  width: 100%;
 }
 
 section.contato form input,
 section.contato form textarea {
-	border: 1px solid #ccc;
-	font-size: 18px;
-	padding: 15px 10px;
-	font-style: normal;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 15px 10px;
+  font-style: normal;
 }
 
 section.contato form textarea {
-	height: 180px;
-	resize: none;
+  height: 180px;
+  resize: none;
 }
 
 /***** FOOTER ******/
-footer{
-	background-color: #252525;
+footer {
+  background-color: #252525;
 }
 
-footer nav.center{
-	display: flex;
-	height: 130px;
+footer nav.center {
+  display: flex;
+  height: 130px;
 }
 
-footer nav.center .left ul{
-	display: flex;
-	padding: 0;
+footer nav.center .left ul {
+  display: flex;
+  padding: 0;
 }
 
-footer nav.center .left ul li{
-	margin-right:60px;
-	list-style-type: none;
+footer nav.center .left ul li {
+  margin-right: 60px;
+  list-style-type: none;
 }
 
-footer nav.center .left ul li a{
-	text-decoration: none;
+footer nav.center .left ul li a {
+  text-decoration: none;
   text-transform: capitalize;
   font-size: 20px;
-	color: white;
+  color: white;
 }
 
-footer nav.center h2{
-	font-size: 20px;
-	color: white;
+footer nav.center .left ul li a.corrente {
+  color: red;
+}
+
+footer nav.center h2 {
+  font-size: 20px;
+  color: white;
 }
 
 /***** MEDIA SCREEN <= 950px ******/
 @media screen and (max-width: 950px) {
   /* MEDIA SCREEN -> SERVICOS */
-  .serv-container{
+  .serv-container {
     display: flex;
     flex-direction: column;
     width: 90%;
   }
-  .serv-container a{
+  .serv-container a {
     float: none;
     position: static;
     align-self: center;
@@ -413,8 +412,6 @@ footer nav.center h2{
   }
 }
 
-
-
 /***** MEDIA SCREEN <= 760px ******/
 @media screen and (max-width: 760px) {
   /* MEDIA SCREEN -> SERVICOS/DEPOIMENTOS*/
@@ -427,110 +424,103 @@ footer nav.center h2{
     width: 100%;
   }
 
-	/* MEDIA SCREEN -> CONTATO*/
-	/* section.contato form{
+  /* MEDIA SCREEN -> CONTATO*/
+  /* section.contato form{
 		width: 100%;
   } */
-	
-	section.contato form input[type="tel"],
-	section.contato form input[type="email"] {
-		width: 100%;
+
+  section.contato form input[type="tel"],
+  section.contato form input[type="email"] {
+    width: 100%;
+  }
+
+  section.contato form textarea,
+  section.contato form input[type="text"],
+  section.contato form input[type="email"],
+  section.contato form input[type="tel"] {
+    margin: 10px 0;
+  }
+
+  /* MEDIA SCREEN -> FOOTER*/
+  footer nav.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer nav.center .left ul {
+    display: none;
+  }
 }
-
-section.contato form textarea,
-section.contato form input[type="text"],
-section.contato form input[type="email"],
-section.contato form input[type="tel"]{
-	margin: 10px 0;
-}
-
-
-/* MEDIA SCREEN -> FOOTER*/
-footer nav.center{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	}
-	
-	footer nav.center .left ul{
-		display: none;
-	}
-	
-}
-
-
 
 /***** MEDIA SCREEN <= 600px ******/
 @media screen and (max-width: 600px) {
-
   /* MEDIA SCREEN -> HEADER */
-	header nav img.logo{
-		height: 70px;
-	}
+  header nav img.logo {
+    height: 70px;
+  }
 
-	header nav img.btn-menu{
-		display: flex;
-		position: absolute;
-		top: 45px;
-		right: 20px;
-		width: 35px;
-		height: 35px;
-	}
-
+  header nav img.btn-menu {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
 
   header nav div.right ul {
-		display: flex; 
-		background-color: white;
-		position: absolute;
-		right: 0px;
-		flex-direction: column;
-		width: 100%;
-		z-index: 3;
-		margin-top: 65px;
+    display: flex;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    width: 100%;
+    z-index: 3;
+    margin-top: 65px;
     padding: 10px 0;
     background-color: orange;
-	}
-	
-	header nav div.right ul li{
-		text-align: center;
-		padding: 7px 0;
-	}
-	
-	header nav div.right ul li a{
-		font-size: 20px;
   }
-  
+
+  header nav div.right ul li {
+    text-align: center;
+    padding: 7px 0;
+  }
+
+  header nav div.right ul li a {
+    font-size: 20px;
+  }
+
   /* MEDIA SCREEN -> SETAS */
   .setas {
     position: static;
   }
 
-	/* MEDIA SCREEN -> CONTATO*/
-	section.contato form{
-		width: 100%
-	}
+  /* MEDIA SCREEN -> CONTATO*/
+  section.contato form {
+    width: 100%;
+  }
 
-	section.destaque .title {
-		margin: 50px 0 0;
-	}
+  section.destaque .title {
+    margin: 50px 0 0;
+  }
 
-	section.destaque .group-car {
-		flex-direction: column;
-		align-items: center;
-	}
+  section.destaque .group-car {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	section.destaque .group-car .car{
-		width: 100%;
-		margin-top: 30px;
-		padding: 10px;
-		text-align: center;
-	}
-
+  section.destaque .group-car .car {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 /***** MEDIA SCREEN <= 400px ******/
 @media screen and (max-width: 400px) {
-/***** BAR ****/
+  /***** BAR ****/
   .barras {
     margin-left: 0px;
     /* padding-top: 80px; */
@@ -575,5 +565,3 @@ footer nav.center{
     font-size: 20px;
   }
 }
-
-
