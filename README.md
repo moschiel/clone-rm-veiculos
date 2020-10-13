@@ -1,13 +1,13 @@
 # clone-rm-veiculos
-Clone of RM Veiculos Especiais web page using HTML/CSS
+Clone of RM Veiculos Especiais web page using HTML/CSS/jQuery
 
 ![](clone-image.PNG)
 
 ### Utility:
-- Pratice responsive design using HTML and CSS
+- Pratice responsive design using HTML, CSS, jQuery
 
 #### Material:
-- HTML, CSS
+- HTML, CSS, jQuery
 
 #### Tutorial:
 - Open terminal ( cmd, bash, etc... )
