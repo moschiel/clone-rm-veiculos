@@ -8,6 +8,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/venda-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/venda.js" defer></script>
     <title>RM VEÍCULOS ESPECIAIS</title>
   </head>
   <body>
@@ -46,7 +48,7 @@
         <aside>
           <div class="range">
             <p>Filtre por preço</p>
-            <input
+            <input id="filterBar"
               type="range"
               min="1"
               max="100"
@@ -55,7 +57,7 @@
               id="myRange"
             />
             <div class="preco">
-              <p>R$ 0,00</p>
+              <p id="filterValue">R$ 35.000,00</p>
               <p>R$ 70.000,00</p>
             </div>
           </div>
